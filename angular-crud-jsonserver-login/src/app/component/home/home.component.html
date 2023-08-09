@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="text ">
+        <h1 [ngStyle]="{'color':color}">FIND YOUR FAVORITE PHONE</h1>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus autem minima
+            distinctio fugiat. Illum.
+        </p>
+        <a routerLink='/login' class="btn btn-light ms-5 btnlogin">LOG IN </a>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+    <div class="image ms-5">
+        <div *ngIf="!source">
+            <img class="imagefull" src="../assets/0.png" width="230px" />
+        </div>
+        <img src={{source}} width="230px" />
+    </div>
+</div>
+<div class="imgliste">
+    <ul>
+        <li><img src="../assets/0.png" width="50px" (click)="changesource('../assets/0.png','gold')" /></li>
+        <li><img src="../assets/1.png" width="50px" (click)="changesource('../assets/1.png','blue')" /></li>
+        <li><img src="../assets/2.png" width="50px" (click)="changesource('../assets/2.png','gray')" /></li>
+        <li><img src="../assets/3.png" width="50px" (click)="changesource('../assets/3.png','silver')" /></li>
+        <li><img src="../assets/4.png" width="50px" (click)="changesource('../assets/4.png','red')" /></li>
+    </ul>
+</div>

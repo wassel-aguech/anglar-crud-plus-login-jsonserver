@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="formadd">
+        <h1 class="text-center text-warning">ADD PRODUCT</h1>
+        <form *ngIf="productform" [formGroup]="productform" (submit)="onsubmit()">
+
+            <div class="form-group">
+                <label for="">MARQUE</label>
+                <input formControlName="marque" autofocus type="text" placeholder="marque" class="form-control"
+                [ngClass]="{'is-invalid':submitted && productform.get('marque')?.errors ,'is-valid':submitted && !productform.get('marque')?.errors}">
+            </div>
+
+            <div class="form-group">
+                <label for="">QUANTITE</label>
+                <input formControlName="quantite" type="number" placeholder="marque" class="form-control"
+                [ngClass]="{'is-invalid':submitted && productform.get('quantite')?.errors ,'is-valid':submitted && !productform.get('quantite')?.errors}">
+            </div>
+
+            <div class="form-group">
+                <label for="">PRIX</label>
+                <input formControlName="prix" type="number" placeholder="PRIX" class="form-control"
+                [ngClass]="{'is-invalid':submitted && productform.get('prix')?.errors ,'is-valid':submitted && !productform.get('prix')?.errors}">
+            </div>
+
+            <div class="form-group">
+                <label for="">FOURNISSEUR</label>
+                <input formControlName="fournisseur" type="text" placeholder="FOURNISSEUR" class="form-control"
+                [ngClass]="{'is-invalid':submitted && productform.get('fournisseur')?.errors ,'is-valid':submitted && !productform.get('fournisseur')?.errors}">
+            </div>
+
+            <div class="form-group">
+                <label for="">DATEENTRE</label>
+                <input formControlName="dateentre" type="text" placeholder="DATEENTRE" class="form-control"
+                [ngClass]="{'is-invalid':submitted && productform.get('dateentre')?.errors ,'is-valid':submitted && !productform.get('dateentre')?.errors}">
+            </div>
+            <button  class="btn btn-warning mt-3 w-100" type="submit"> ADD PRODUCT </button>
+
+        </form>
+    </div>
+</div>

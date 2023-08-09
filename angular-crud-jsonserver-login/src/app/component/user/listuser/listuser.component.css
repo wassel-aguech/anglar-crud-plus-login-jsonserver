@@ -1,0 +1,46 @@
+
+
+table{
+    border: 2px solid white;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+table th{
+    background-color: gray;
+}
+table td{
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: tahoma;
+    text-transform: uppercase;
+    color: red;
+}
+table td:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+header{
+    text-align: center;
+}
+input{
+    width: 30%;
+    margin: auto;
+    transition: 0.5s;
+    font-weight: bold;
+}
+input:focus{
+    transform: scale(1.2);
+
+}

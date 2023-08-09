@@ -1,0 +1,14 @@
+label{
+    color: crimson;
+    font-weight: bold;
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.formadd{
+    width: 60%;
+    margin: auto;
+}

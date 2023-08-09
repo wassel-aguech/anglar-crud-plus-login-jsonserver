@@ -1,0 +1,48 @@
+<div class="container mt-3 ">
+    <form *ngIf="userform" [formGroup]="userform" class="p-3 ">
+        <h1 class="TITRE mb-3 text-warning text-center">UPDATE USER</h1>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" formControlName="name" class="form-control mb-3 text-center"
+                        placeholder="USER NAME">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" formControlName="address" class="form-control mb-3 text-center"
+                        placeholder="ADDRESS">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" formControlName="country" class="form-control mb-3 text-center"
+                        placeholder="COUNTRY">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" formControlName="mail" class="form-control mb-3 text-center" placeholder="EMAIL">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" formControlName="password" class="form-control mb-3 text-center"
+                        placeholder="PASSWORD">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" formControlName="confirmpassword" class="form-control mb-3 text-center"
+                        placeholder="ONFIRM PASSWORD">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-warning mt-3 w-100" (click)="update()" >UPDATE</button>
+    </form>
+</div>

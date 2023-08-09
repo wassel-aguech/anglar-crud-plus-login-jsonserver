@@ -1,0 +1,37 @@
+
+<header>
+    <h1 class="text-warning"> LIST PRODUCT</h1>
+    <input type="text" class="form-control" [(ngModel)]="nameproduct" placeholder=" SEARCH PRODUCT BY NAME ...!">
+    <a class="btn btn-danger m-2" routerLink="/addproduct">ADD NEW PRODUCT</a>
+    </header>
+    
+    
+    
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>MARQUE</th>
+            <th>QUANTITE</th>
+            <th>PRIX</th>
+            <th>FOURNISEUR</th>
+            <th>DATEENTRE</th>
+            <th>ACTION</th>
+            <th></th>
+        </tr>
+        <tbody *ngFor="let product of listProducts , index as i">
+        <tr *ngIf="product.marque === nameproduct || nameproduct== null" >
+            <td> {{i}} </td>
+            <td>{{product.marque}}</td>
+            <td>{{product.quantite}}</td>
+            <td>{{product.prix}}</td>
+            <td>{{product.fournisseur}}</td>
+            <td>{{product.dateentre}}</td>
+            <td><button class="btn btn-warning"  (click)="gotoupdate(i)" >UPDATE</button></td>
+            <td><button class="btn btn-warning" (click)="delete(product.id)" >DELETE</button></td>
+        </tr>
+    </tbody>
+    </table>
+    
+    
+    
+    

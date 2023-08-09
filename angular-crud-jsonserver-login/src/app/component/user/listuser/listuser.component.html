@@ -1,0 +1,34 @@
+<header>
+    <h1 class="text-warning"> list user</h1>
+    <input type="text" class="form-control" [(ngModel)]="nameuser" placeholder=" SEARCH USER BY NAME ...!">
+    <a class="btn btn-danger m-2" routerLink="/adduser">ADD NEW USER</a>
+</header>
+
+
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>ADRESSE</th>
+        <th>EMAIL</th>
+        <th>COUNTRY</th>
+        <th>PASSWORD</th>
+        <th>CONFIRM PASSWORD</th>
+        <th>ACTION</th>
+        <th></th>
+    </tr>
+    <tbody *ngFor="let user of listUsers , index as i">
+        <tr *ngIf="user.name.includes(nameuser) || nameuser== null">
+            <td> {{i}} </td>
+            <td>{{user.name}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.mail}}</td>
+            <td>{{user.country}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.confirmpassword}}</td>
+            <td><button class="btn btn-warning" (click)="gotoupdate(i)">UPDATE</button></td>
+            <td><button class="btn btn-warning" (click)="delete(user.id)">DELETE</button></td>
+        </tr>
+    </tbody>
+</table>

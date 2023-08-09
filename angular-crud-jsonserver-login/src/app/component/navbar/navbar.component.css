@@ -1,0 +1,41 @@
+
+body{
+    height: 100vh;
+}
+
+h1{color: white;}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid gold;
+}
+
+ul li{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.5s;
+}
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+ul li a:hover{
+    color: red;
+    font-weight: bold;
+}
+
+ul li:hover{
+    background-color: yellow;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+
+.logo{
+    background-color: red;
+    border-radius: 30% 30% 30% 30%;
+}

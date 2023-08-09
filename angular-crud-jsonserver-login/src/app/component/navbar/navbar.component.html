@@ -1,0 +1,14 @@
+<nav>
+    <div class="logo">
+        <h1>PHONE.<span class="text-warning">PRODUCT</span> </h1>
+    </div>
+    <div class="menue">
+        <ul>
+            <li><a routerLink="/home">HOME</a></li>
+            <li *ngIf="connected"><a routerLink="/user">USER</a></li>
+            <li *ngIf="connected"><a routerLink="/product">PRODUCT</a></li>
+            <!-- <li><a routerLink="">CONTACT</a></li>
+            <li><a routerLink="">QUIZ</a></li> -->
+        </ul>
+    </div>
+</nav>

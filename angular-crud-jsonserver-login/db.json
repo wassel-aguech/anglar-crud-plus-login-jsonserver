@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "name": "w@ssel",
+      "address": "tunisia",
+      "country": "sfax",
+      "mail": "wassel@yahoo.com",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "marque": "njk",
+      "quantite": "bjk",
+      "prix": "bjkb",
+      "fournisseur": "jkb",
+      "dateentre": "jkb",
+      "id": 2
+    }
+  ]
+}
